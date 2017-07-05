@@ -4,9 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/WEB-INF/css/main.css" rel="stylesheet" type=text/css>
 <title>メインページ</title>
 </head>
 <body>
-<a href="Login">ログイン画面へ</a>
+<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
+
+<form action="Login">
+<input type="submit" value="ログイン画面へ">
+</form>
+
 </body>
 </html>
