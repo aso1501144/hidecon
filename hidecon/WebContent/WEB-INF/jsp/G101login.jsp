@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>メインページ</title>
+<title>ログイン画面</title>
 </head>
 <body>
-<a href="Login">ログイン画面へ</a>
+
 </body>
 </html>
