@@ -67,7 +67,7 @@ public class UserDAO {
 				rs.next();
 
 				us.setUser_id(rs.getString("user_id"));
-				us.setPassword(rs.getString("pass"));
+				us.setPassword(rs.getString("password"));
 
 			} catch (Exception e) {
 				us = null;
