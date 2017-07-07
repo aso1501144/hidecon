@@ -53,55 +53,14 @@ public class UserDAO {
 			}
 		}
 
-		public boolean findByLogin(String id, String pass) {
-			try {
-				// DB接続
-				connection();
-				// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
-				String sql = "SELECT memberid,password FROM member WHERE memberid = ? AND password = ?;";
-				stmt = con.prepareStatement(sql);
-				stmt.setString(1, id);
-				stmt.setString(2, pass);
-				ResultSet rs = stmt.executeQuery();
-
-				// boolean result;
-				if (rs.next()) {
-					result = true;
-				} else {
-					result = false;
-				}
-
-			} catch (SQLException e) {
-				e.printStackTrace();
-				return false;
-			} catch (ClassNotFoundException e) {
-				// TODO: handle exception
-				e.printStackTrace();
-				return false;
-			} catch (Exception e) {
-				// TODO 自動生成された catch ブロック
-				e.printStackTrace();
-			} finally {
-				if (con != null) {
-					try {
-						con.close();
-					} catch (SQLException e) {
-						e.printStackTrace();
-						return false;
-					}
-				}
-			}
-			return result;
-		}
-
-		public User getMember(String id, String pass) {
+		public User login(String id, String pass) {
 			User us = new User();
 
 			try { // DB接続
 				connection();
 				// INSERT文の設定・実行
 				// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
-				String sql = "SELECT * FROM member WHERE memberid = ? AND password = ?;";
+				String sql = "SELECT * FROM user WHERE memberid = ? AND password = ?;";
 				stmt = con.prepareStatement(sql);
 				stmt.setString(1, id);
 				stmt.setString(2, pass);
