@@ -4,12 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="/WEB-INF/css/main.css" rel="stylesheet" type=text/css>
+<!-- <link href="css/main.css" rel="stylesheet" type=text/css> -->
+<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
+<link href="css/tekkadan.css" rel="stylesheet" media="all">
 <title>メインページ</title>
 </head>
-<body>
+<body >
 <jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
-
+<br>
 <form action="Login">
 <input type="submit" value="ログイン画面へ">
 </form>

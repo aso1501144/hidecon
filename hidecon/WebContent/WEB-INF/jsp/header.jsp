@@ -4,16 +4,37 @@ comm: ヘッダー：ASOショップ　-->
 
 <%@ page pageEncoding="UTF-8"%>
 <%@ include file="/WEB-INF/jsp/common.jsp"%>
-<div id="headerArea">
-	<div style="width: 400px; float: left;">
-		<h1 style="font-size: 1.25em; color: #000; vertical-align: middle;">
-			<a class="header" href=""><img alt="" src='/hidecon/img/IMG_1589.jpg' width="150" height="200"></a>
-			ひでコンテスト
-		</h1>
-	</div>
-	<div
-		style="text-align: right; font-size: 1em; width: 330px; padding: 10px; float: left;">
-	</div>
+<div class="container">
+	<div id="headerArea">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<img width="300" height="400"  src="./img/IMG_0887.jpg">
+			</div>
+			<!-- <div class="col-md-2 col-sm-4 col-xs-6">
+				<img width="300" height="200" src="./img/IMG_0913.jpg">
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img width="300" height="200" src="./img/IMG_0927.jpg">
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img width="300" height="200" src="./img/IMG_1082.jpg">
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				<img width="300" height="200" src="./img/IMG_1160.jpg">
+			</div> -->
+			 <div class="col-md-2 col-sm-4 col-xs-6">
+				田所
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				KBTIT
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				unk
+			</div>
+			<div class="col-md-2 col-sm-4 col-xs-6">
+				hide
+			</div>
 
-	<br style="clear: both;">
+		</div>
+	</div>
 </div>

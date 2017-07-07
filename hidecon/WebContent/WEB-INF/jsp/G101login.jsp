@@ -6,6 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/hover.css" rel="stylesheet" media="all">
 <link href="css/tekkadan.css" rel="stylesheet" media="all">
+<link href="css/main.css" rel="stylesheet" type=text/css>
+<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
 <title>ログイン画面</title>
 </head>
 <body id="user">
