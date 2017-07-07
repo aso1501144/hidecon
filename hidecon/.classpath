@@ -7,9 +7,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/授業用/_2年_Webアプリケーション開発演習/＿プロジェクトに入れるツール/jar lib/jstl-api-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/授業用/_2年_Webアプリケーション開発演習/＿プロジェクトに入れるツール/jar lib/jstl-impl-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/授業用/_2年_Webアプリケーション開発演習/＿プロジェクトに入れるツール/jar lib/mysql-connector-java-5.1.39-bin.jar"/>
-	<classpathentry kind="lib" path="D:/授業用/_2年_Webアプリケーション開発演習/＿プロジェクトに入れるツール/jar lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/xampp/tomcat/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/xampp/tomcat/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fland/Desktop/開発環境/webwork/hidecon/hidecon/WebContent/WEB-INF/lib/mysql-connector-java-5.1.39-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/fland/Desktop/開発環境/webwork/hidecon/hidecon/WebContent/WEB-INF/lib/jstl-impl-1.2.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
