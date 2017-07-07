@@ -1,10 +1,10 @@
 @CHARSET "UTF-8";
 
 body#user {
-	width: 800px;
+	/* width: 800px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0px;
+	padding: 0px; */
   /* 画像ファイルの指定 */
   background-image: url(../img/taso2.jpg);
 
@@ -22,6 +22,20 @@ body#user {
 
   /* 背景画像が読み込まれる前に表示される背景のカラー */
   background-color: #464646;
+}
+
+/* body#nontaso {
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+
+} */
+
+table#login {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
 }
 
 body#manager {

@@ -9,7 +9,7 @@
 <link href="css/tekkadan.css" rel="stylesheet" media="all">
 <title>メインページ</title>
 </head>
-<body >
+<body id="nontaso">
 <jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 <br>
 <form action="Login">

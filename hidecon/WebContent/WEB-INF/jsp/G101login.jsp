@@ -6,23 +6,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/hover.css" rel="stylesheet" media="all">
 <link href="css/tekkadan.css" rel="stylesheet" media="all">
-<link href="css/main.css" rel="stylesheet" type=text/css>
+<!-- <link href="css/main.css" rel="stylesheet" type=text/css> -->
 <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
 <title>ログイン画面</title>
 </head>
 <body id="user">
 <jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-	<form action="<%=request.getContextPath()%>/userlogin" method="POST"
-		onsubmit="return check(this)">
+	<form action="Login" method="POST">
 	<div class="parent">
   	<div class="inner">
     <div class="tablecell">
 
-		<c:if test="${errorMassage != null }">
-			<c:out value="${errorMassage}"></c:out>
-		</c:if>
-		<table class="table-design">
+		<table class="table-design" id="login">
 			<tr>
 			<td colspan="2">ログイン</td>
 			</tr>
