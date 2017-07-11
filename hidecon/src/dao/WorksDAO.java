@@ -3,6 +3,7 @@ package dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
@@ -52,7 +53,7 @@ public class WorksDAO {
 			}
 		}
 
-		public Works getcomment(String user_id, String works_id) {
+		public Works getWork(String works_id) {
 			Works wr = new Works();
 
 			try { // DB接続
@@ -82,5 +83,37 @@ public class WorksDAO {
 				}
 			}
 			return wr;
+	}
+
+		public ArrayList<Works> getWorks() {
+			ArrayList<Works> list = new ArrayList<Works>();
+			Works wr = new Works();
+			try { // DB接続
+				connection();
+				// INSERT文の設定・実行
+				// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
+				String sql = "SELECT * FROM works;";
+				stmt = con.prepareStatement(sql);
+				ResultSet rs = stmt.executeQuery();
+
+				while (rs.next()) {
+				wr.setWorks_id(rs.getString("works_id"));
+				wr.setWorks_name(rs.getString("works_name"));
+				wr.setCreator_name(rs.getString("creator_name"));
+				wr.setWorks_count(rs.getInt("works_count"));
+				wr.setPath(rs.getString("path"));
+
+				list.add(wr);
+				}
+			} catch (Exception e) {
+				wr = null;
+			} finally {
+				try {
+					close();
+				} catch (Exception e) {
+
+				}
+			}
+			return list;
 	}
 }

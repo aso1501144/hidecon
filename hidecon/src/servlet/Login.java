@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.UserDAO;
+import dao.WorksDAO;
 import model.User;
 
 /**
@@ -53,23 +54,17 @@ public class Login extends HttpServlet {
 
 		String pass = request.getParameter("pass");
 		UserDAO userDAO = new UserDAO();
-		//UserBean user = new UserBean();
 
 		User login = new User();
 
-		//String login = userDAO.getLogin(s_id, pass);
 		login = userDAO.login(s_id, pass);
 
 		if (login != null) {
 			// 会員情報をセッションに格納
-			//session.setAttribute("s_id", login);
-			//session.setAttribute("s_name", userDAO.getSname(s_id));
+			session.setAttribute("user", login);
 
-			//EntryDAO entry = new EntryDAO();
-			//ArrayList<EntryBean> entryList = new ArrayList<EntryBean>();
-			//entryList = entry.getData(s_id);
-
-			//session.setAttribute("entry", entryList);
+			WorksDAO worksDAO = new WorksDAO();
+			request.setAttribute("array", worksDAO.getWorks());
 
 			path = "WEB-INF/jsp/G102gazou.jsp";
 
