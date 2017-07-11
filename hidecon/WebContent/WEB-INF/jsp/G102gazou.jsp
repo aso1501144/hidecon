@@ -5,9 +5,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
+<link href="css/tekkadan.css" rel="stylesheet" media="all">
 <title>投票ページ</title>
 </head>
-<body id="user">
+<body>
 	<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
 	<h1>投票してクリー</h1>
@@ -52,12 +54,9 @@
 			name="category" value="">
 	</form>
 
-	<img src="./img/IMG_1838.png">
-	<img src="./img/IMG_1838.png">
-	<img src="./img/IMG_1838.png">
-	<img src="./img/IMG_1838.png">
-	<img src="./img/IMG_1838.png">
-	<img src="./img/IMG_1838.png">
-	<img src="./img/IMG_1838.png">
+<a>
+	<img src="./img/IMG_1971.jpg" width="30%" height="20%" style="float: left;">
+	<img src="./img/IMG_1995.jpg" width="30%" height="30%">
+</a>
 </body>
 </html>
