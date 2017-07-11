@@ -81,5 +81,27 @@ public class CommentDAO {
 					}
 				}
 				return cm;
+			}
+			public void insertcomment(String user_id,String works_id,String comment) {
+
+
+			try {
+				// DB接続
+				connection();
+				// INSERT文の設定・実行
+				// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
+				String sql = "INSERT INTO comment VALUES(?,?,?);";
+				stmt = con.prepareStatement(sql);
+				stmt.setString(1, user_id);
+				stmt.setString(2, works_id);
+				stmt.setString(3, comment);
+				stmt.executeUpdate();
+			} catch (Exception e) {
+			} finally {
+				try {
+					close();
+				} catch (Exception e) {
+				}
+			}
 		}
 }

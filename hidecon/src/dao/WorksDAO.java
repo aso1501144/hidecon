@@ -116,4 +116,24 @@ public class WorksDAO {
 			}
 			return list;
 	}
+
+		public void Vote(String works_id) {
+			try { // DB接続
+				connection();
+				// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
+
+					String sql = "UPDATE works SET works_count = works_count + 1 WHERE works_id = ?";
+					stmt = con.prepareStatement(sql);
+					stmt.setString(1, works_id);
+
+					stmt.executeUpdate();
+
+			} catch (Exception e) {
+			} finally {
+				try {
+					close();
+				} catch (Exception e) {
+				}
+			}
+		}
 }
