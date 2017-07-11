@@ -106,7 +106,7 @@ public class WorksDAO {
 				list.add(wr);
 				}
 			} catch (Exception e) {
-				wr = null;
+				list = null;
 			} finally {
 				try {
 					close();

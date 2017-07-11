@@ -3,6 +3,7 @@ package dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
@@ -82,6 +83,38 @@ public class CommentDAO {
 				}
 				return cm;
 			}
+
+			public ArrayList<Comment> getcomments(String works_id) {
+				ArrayList<Comment> list = new ArrayList<Comment>();
+				Comment cm = new Comment();
+				try { // DB接続
+					connection();
+					// INSERT文の設定・実行
+					// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
+					String sql = "SELECT * FROM works WHERE works_id = ?;";
+					stmt = con.prepareStatement(sql);
+					stmt.setString(1, "works_id");
+					ResultSet rs = stmt.executeQuery();
+
+					while (rs.next()) {
+					cm.setWorks_id(rs.getString("works_id"));
+					cm.setUser_id(rs.getString("user_id"));
+					cm.setComment(rs.getString("comment"));
+
+					list.add(cm);
+					}
+				} catch (Exception e) {
+					list = null;
+				} finally {
+					try {
+						close();
+					} catch (Exception e) {
+
+					}
+				}
+				return list;
+		}
+
 			public void insertcomment(String user_id,String works_id,String comment) {
 
 
