@@ -19,39 +19,25 @@
 			</h1>
 			<ul id="gnavi">
 
-				<li class="gn-news"><a href="http://tales-ch.jp/news_list.php">ニュース</a></li>
-				<li class="gn-game"><a href="http://tales-ch.jp/game.php">ゲーム</a></li>
+				<li class="gn-news"><a href="http://tales-ch.jp/news_list.php" style="color: white;">ニュース</a></li>
+				<li class="gn-game"><a href="http://tales-ch.jp/game.php" style="color: white;">ゲーム</a></li>
 				<li class="gn-goods"><a
-					href="http://tales-ch.jp/special_index.php?ms_id=44">グッズ</a></li>
+					href="http://tales-ch.jp/special_index.php?ms_id=44" style="color: white;">グッズ</a></li>
 				<li class="gn-movie"><a
-					href="http://tales-ch.jp/movie_archive.php">ムービー</a></li>
+					href="http://tales-ch.jp/movie_archive.php" style="color: white;">ムービー</a></li>
 				<li class="gn-event"><a
-					href="http://tales-ch.jp/special_index.php?ms_id=46">イベント</a></li>
+					href="http://tales-ch.jp/special_index.php?ms_id=46" style="color: white;">イベント</a></li>
 				<li class="gn-member"><a
-					href="http://tales-ch.jp/members_top.php">テイルズメンバーズ</a></li>
+					href="http://tales-ch.jp/members_top.php" style="color: white;">ﾋﾃﾞメンバーズ</a></li>
 				<!-- /#gnavi -->
 			</ul>
 			<!-- /#header -->
 		</div>
 
-
-		<!-- <div class="bnrLong clearfix">
-			<div class="bnrLeft">
-				<a href="http://torays.tales-ch.jp/" target="_blank"><img
-					src="./img/IMG_1971.jpg" alt="" /></a>
-			</div>
-			<div class="bnrRight">
-				<a href="http://torays.tales-ch.jp/" target="_blank"><img
-					src="./img/IMG_1971.jpg" alt="" /></a>
-			</div>
-		</div> -->
-
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
 				<h2>第8回 『ひで オブ』キャラクター人気投票2017</h2>
-				<img src="./img/tuo.jpg"
-					alt="『ひで オブ』キャラクター人気投票2017開催！" width="900" height="269px" />
 
 
 				<div class="about">
