@@ -53,23 +53,14 @@ public class Login extends HttpServlet {
 
 		String pass = request.getParameter("pass");
 		UserDAO userDAO = new UserDAO();
-		//UserBean user = new UserBean();
+
 
 		User login = new User();
 
-		//String login = userDAO.getLogin(s_id, pass);
 		login = userDAO.login(s_id, pass);
 
 		if (login != null) {
-			// 会員情報をセッションに格納
-			//session.setAttribute("s_id", login);
-			//session.setAttribute("s_name", userDAO.getSname(s_id));
 
-			//EntryDAO entry = new EntryDAO();
-			//ArrayList<EntryBean> entryList = new ArrayList<EntryBean>();
-			//entryList = entry.getData(s_id);
-
-			//session.setAttribute("entry", entryList);
 
 			path = "WEB-INF/jsp/G102gazou.jsp";
 
