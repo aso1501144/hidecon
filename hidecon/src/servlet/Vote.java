@@ -31,8 +31,9 @@ public class Vote extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		request.setAttribute("path",request.getAttribute("path"));
-		request.setAttribute("id",request.getAttribute("id"));
+
+		request.setAttribute("path",request.getParameter("path"));
+		request.setAttribute("id",request.getParameter("id"));
 
 		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103touhyou.jsp");
 		rd.forward(request, response);

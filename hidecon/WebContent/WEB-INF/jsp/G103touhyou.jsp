@@ -21,9 +21,13 @@
 						<div class="tablecell">
 							<img border="0" width="285" height="285"
 								src="./img/<c:out value="${requestScope.path}"/>">
+								<c:out value="${requestScope.id}"/>
 						</div>
 					</div>
 				</div>
+
+
+				いいのか？
 				<form name="form1" action="" method="get">
 					<input type="hidden" name="id" value="">
 				</form>
