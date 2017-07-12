@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="css/tekkadan.css" rel="stylesheet" media="all">
+<!-- <link href="css/tekkadan.css" rel="stylesheet" media="all"> -->
+<link href="css/mm.css" rel="stylesheet" media="all">
 <title>ログイン画面</title>
 </head>
 <body>

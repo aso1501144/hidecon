@@ -5,20 +5,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
-<link href="css/tekkadan.css" rel="stylesheet" media="all">
+<!-- <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
+<link href="css/tekkadan.css" rel="stylesheet" media="all"> -->
+<link href="css/mm.css" rel="stylesheet" media="all">
 <title>投票ページ</title>
 </head>
 <body>
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-		<h1>ログインしてクリー</h1>
+		<h1 style="height: 200%">投票してクリー</h1>
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
 				<table>
-					<c:forEach var="works" items="${requestScope.array}"
+					<c:forEach var="works" items="${SessionScope.array}"
 						varStatus="status">
 						<c:if test="${status.first}">
 							<tr>
@@ -27,11 +28,10 @@
 							<div style="text-align: center;">
 								<p>
 									<a href="#"
-										onclick="document.form1.aid.value = '${category.id}';
-									document.form1.category.value = '${category.name}';
-									document.form1.submit();return false;return false;">
+										onclick="document.form1.aid.value = '${works}';
+									document.form1.submit();return false;">
 										<img border="0" width="100" height="100"
-										src='./img/<c:out value="${works.works_path}"/>'>
+										src='./img/<c:out value="${works.path}"/>'>
 									</a>
 								</p>
 								<p>

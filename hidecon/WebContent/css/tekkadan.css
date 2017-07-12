@@ -38,7 +38,10 @@ a:active {
 	background: url(../img/org.jpg);
 	background-color: white;
 	width: 962px;
+	/* width:200%; */
 	height: 87px;
+	padding: auto;
+
 }
 
 #service #header {
@@ -75,7 +78,7 @@ a:active {
 /* コンテンツ
 ------------------------------------------------------*/
 #container {
-	background: #FFF url(../img/taso.jpg);
+	background: #FFF url(../img/taso2.jpg);
 }
 
 #wrapper {
@@ -137,6 +140,7 @@ a:active {
 	left: 171px;
 	top: 50px;
 	width: 805px;
+
 }
 
 #gnavi li {
@@ -147,6 +151,7 @@ a:active {
 #gnavi li a {
 	display: block;
 	/* background: url(../img/hidechannel.png) no-repeat; */
+	background-color:red;
 	width: 112px;
 	height: 32px;
 	/* text-indent: -9999px; */
@@ -1308,7 +1313,7 @@ h1 {
 	background-color: #baddf9;
 	font-weight: bold;
 	font-size: 100%;
-	height: 200%;
+	height: 100%;
 }
 
 table.table-design {

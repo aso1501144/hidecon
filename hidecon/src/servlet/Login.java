@@ -64,7 +64,7 @@ public class Login extends HttpServlet {
 			session.setAttribute("user", login);
 
 			WorksDAO worksDAO = new WorksDAO();
-			request.setAttribute("array", worksDAO.getWorks());
+			session.setAttribute("array", worksDAO.getWorks());
 
 			path = "WEB-INF/jsp/G102gazou.jsp";
 
