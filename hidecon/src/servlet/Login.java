@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import dao.UserDAO;
 import dao.WorksDAO;
 import model.User;
+import model.Works;
 
 /**
  * Servlet implementation class login
@@ -64,7 +66,9 @@ public class Login extends HttpServlet {
 			session.setAttribute("user", login);
 
 			WorksDAO worksDAO = new WorksDAO();
-			session.setAttribute("array", worksDAO.getWorks());
+			ArrayList<Works> works = new ArrayList<Works>();
+			works = worksDAO.getWorks();
+			request.setAttribute("array", works);
 
 			path = "WEB-INF/jsp/G102gazou.jsp";
 

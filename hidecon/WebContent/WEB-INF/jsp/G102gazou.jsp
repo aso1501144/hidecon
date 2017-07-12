@@ -19,7 +19,7 @@
 
 			<div id="mainCol">
 				<table>
-					<c:forEach var="works" items="${SessionScope.array}"
+					<c:forEach var="works" items="${requestScope.array}"
 						varStatus="status">
 						<c:if test="${status.first}">
 							<tr>
@@ -31,7 +31,7 @@
 										onclick="document.form1.aid.value = '${works}';
 									document.form1.submit();return false;">
 										<img border="0" width="100" height="100"
-										src='./img/<c:out value="${works.path}"/>'>
+										src="./img/<c:out value="${works.path}"/>">
 									</a>
 								</p>
 								<p>
