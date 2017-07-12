@@ -18,49 +18,48 @@
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
-				<table>
-					<c:forEach var="works" items="${requestScope.array}"
-						varStatus="status">
-						<c:if test="${status.first}">
-							<tr>
-						</c:if>
-						<td>
-							<div style="text-align: center;">
-								<p>
-									<a href="#"
-										onclick="document.form1.aid.value = '${works}';
+				<div class="parent">
+					<div class="inner">
+						<div class="tablecell">
+							<table>
+								<c:forEach var="works" items="${requestScope.array}"
+									varStatus="status">
+									<c:if test="${status.first}">
+										<tr>
+									</c:if>
+									<td>
+										<div style="text-align: center;">
+											<p>
+												<a href="#"
+													onclick="document.form1.id.value = '${works.works_id}';
+													document.form1.path.value = '${works.path}';
 									document.form1.submit();return false;">
-										<img border="0" width="100" height="100"
-										src="./img/<c:out value="${works.path}"/>">
-									</a>
-								</p>
-								<p>
-									<c:out value="${works.works_name}" />
-								</p>
-								</p>
-							</div>
-						</td>
-						<c:if test="${status.count % 3 == 0}">
-							</tr>
-							<tr>
-						</c:if>
-						<c:if test="${status.end}">
-							</tr>
-						</c:if>
-					</c:forEach>
-
-
-
-				</table>
-				<form name="form1" action="Serch" method="post">
-					<input type="hidden" name="aid" value=""> <input
-						type="hidden" name="category" value="">
+													<img border="0" width="285" height="285"
+													src="./img/<c:out value="${works.path}"/>">
+												</a>
+											</p>
+											<p>
+												<c:out value="${works.works_name}" />
+											</p>
+											</p>
+										</div>
+									</td>
+									<c:if test="${status.count % 3 == 0}">
+										</tr>
+										<tr>
+									</c:if>
+									<c:if test="${status.end}">
+										</tr>
+									</c:if>
+								</c:forEach>
+							</table>
+						</div>
+					</div>
+				</div>
+				<form name="form1" action="Vote" method="get">
+					<input type="hidden" name="id" value="">
+					<input type="hidden" name="path" value="">
 				</form>
-
-				<a> <img src="./img/IMG_1971.jpg" width="30%" height="20%"
-					style="float: left;"> <img src="./img/IMG_1995.jpg"
-					width="30%" height="30%">
-				</a>
 			</div>
 		</div>
 	</div>

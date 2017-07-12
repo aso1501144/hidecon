@@ -31,11 +31,10 @@ public class Vote extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String works_id = request.getParameter("works_id");
-		WorksDAO worksDAO = new WorksDAO();
-		worksDAO.Vote(works_id);
+		request.setAttribute("path",request.getAttribute("path"));
+		request.setAttribute("id",request.getAttribute("id"));
 
-		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/think.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103touhyou.jsp");
 		rd.forward(request, response);
 	}
 
@@ -44,7 +43,13 @@ public class Vote extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
+		String works_id = request.getParameter("works_id");
+		WorksDAO worksDAO = new WorksDAO();
+		worksDAO.Vote(works_id);
+
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/think.jsp");
+		rd.forward(request, response);
 	}
 
 }
