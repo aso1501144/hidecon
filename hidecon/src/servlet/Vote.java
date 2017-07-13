@@ -33,8 +33,13 @@ public class Vote extends HttpServlet {
 
 
 		request.setAttribute("path",request.getParameter("path"));
-		request.setAttribute("id",request.getParameter("id"));
-		request.setAttribute("works_name",request.getParameter("name"));
+		String id = request.getParameter("id");
+		request.setAttribute("id",id);
+
+
+		WorksDAO worksDAO = new WorksDAO();
+
+		request.setAttribute("work",worksDAO.getWork(id));
 		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103touhyou.jsp");
 		rd.forward(request, response);
 	}

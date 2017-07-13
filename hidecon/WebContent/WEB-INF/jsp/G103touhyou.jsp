@@ -20,9 +20,11 @@
 				<div class="parent">
 					<div class="inner">
 						<div class="tablecell">
-							<img border="0" width="285" height="285"
+							<img border="0" width="150%" height="150%"
 								src="./img/<c:out value="${requestScope.path}"/>">
-								<c:out value="${requestScope.works_name}"/>
+
+									<c:out value="${requestScope.work.works_name}"/>
+
 						</div>
 					</div>
 				</div>

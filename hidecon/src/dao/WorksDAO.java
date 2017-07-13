@@ -71,7 +71,7 @@ public class WorksDAO {
 			wr.setWorks_name(rs.getString("works_name"));
 			wr.setCreator_name(rs.getString("creator_name"));
 			wr.setWorks_count(rs.getInt("works_count"));
-			wr.setPath(rs.getString("path"));
+			wr.setPath(rs.getString("works_path"));
 
 		} catch (Exception e) {
 			wr = null;
@@ -137,4 +137,6 @@ public class WorksDAO {
 			}
 		}
 	}
+
+
 }

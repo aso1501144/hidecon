@@ -15,7 +15,7 @@
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
 		<h1 style="height: 200%">投票してクリー</h1>
-		<div id="wrapper" class="clearfix">
+		<!-- <div id="wrapper" class="clearfix"> -->
 
 			<div id="mainCol">
 				<div class="parent">
@@ -35,8 +35,8 @@
 													document.form1.path.value = '${works.path}';
 													document.form1.name.value = '${works.works_name}';
 									document.form1.submit();return false;">
-													<img border="0" width="285"  height="285"
-													src="./img/<c:out value="${works.path}"/>" style="padding: 10px">
+													<img border="0" width="300"  height="300"
+													src="./img/<c:out value="${works.path}"/>" style="padding: 15px">
 												</a>
 											</p>
 											<p>
@@ -56,7 +56,7 @@
 							</table>
 						</div>
 					</div>
-				</div>
+	<!-- 			</div> -->
 				<form name="form1" action="Vote" method="get">
 					<input type="hidden" name="name" value="">
 
