@@ -34,7 +34,7 @@ public class Vote extends HttpServlet {
 
 		request.setAttribute("path",request.getParameter("path"));
 		request.setAttribute("id",request.getParameter("id"));
-
+		request.setAttribute("works_name",request.getParameter("name"));
 		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103touhyou.jsp");
 		rd.forward(request, response);
 	}

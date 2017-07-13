@@ -5,34 +5,28 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
+<link href="css/tekkadan.css" rel="stylesheet" media="all"> -->
 <link href="css/mm.css" rel="stylesheet" media="all">
-<script type="text/javascript" src="/hidecon/js/javascript.js"></script>
-<title>確認</title>
+<title>投票ページ</title>
 </head>
 <body>
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-		<h1 style="height: 200%">投票してクリー</h1>
+		<h1 style="height: 200%">ありがとナスー</h1>
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
 				<div class="parent">
 					<div class="inner">
-						<div class="tablecell">
-							<img border="0" width="285" height="285"
-								src="./img/<c:out value="${requestScope.path}"/>">
-								<c:out value="${requestScope.works_name}"/>
-						</div>
+						ありがとなす
+						<a href="">ランキングなす</a>
 					</div>
 				</div>
-
-
-				いいのか？
-				<form action="Vote" method="post">
-				<input type="hidden" value="<c:out value="${requestScope.id}"/>" name="works_id">
-					<input type="submit" name="submit" value="投票する">
-					<input type="button" onClick='history.back();' value="戻る">
+				<form name="form1" action="Vote" method="get">
+					<input type="hidden" name="id" value="">
+					<input type="hidden" name="path" value="">
 				</form>
 			</div>
 		</div>
