@@ -13,16 +13,21 @@
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 		<h1>ログインしてクリー</h1>
 		<br>
+
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
-				<form action="Login" style="padding: auto; width: auto;">
-					<input type="submit" value="ログイン画面へ"
-						style="padding: auto; width: auto;">
-				</form>
+				<div class="parent">
+					<div class="inner">
+
+						<form action="Login" style="padding: auto; width: auto;">
+							<input type="submit" value="ログイン画面へ"
+								style="padding: auto; width: auto;">
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
 </body>
 </html>
