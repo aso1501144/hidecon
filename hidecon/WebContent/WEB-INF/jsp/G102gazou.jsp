@@ -14,7 +14,7 @@
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-		<h1 style="height: 200%">投票してクリー</h1>
+		<h1 id="kuri" style="height: 200%">投票してクリー</h1>
 		<div id="wrapper" class="clearfix">
 			<div id="mainCol">
 				<div class="parent">

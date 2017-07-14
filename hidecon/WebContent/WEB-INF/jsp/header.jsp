@@ -12,13 +12,14 @@ comm: ヘッダー：ASOショップ　-->
 					height="80" alt="ヒデ" /></a>
 			</h1>
 
-			<ul id="gnavi">
-				<li class="gn-goods"><a href="Login">ログインする</a></li>
-				<li class="gn-movie"><a href="Works">投票はこちら</a></li>
-				<li class="gn-event"><a href="#">イベント</a></li>
-				<li class="gn-member"><a href="#">おﾋﾃﾞ</a></li>
+			<ul id="gnavi" style="margin-left: 200px">
+				<li class="gn-news"><a href="Login">ログインする</a></li>
+				<li class="gn-game"><a href="Works">投票はこちら</a></li>
+				<li class="gn-goods"><a href="#">イベント</a></li>
+				<li class="gn-commu"><a href="#">おﾋﾃﾞ</a></li>
 				<!-- /#gnavi -->
 			</ul>
+
 			<!-- /#header -->
 		</div>
 	</div>

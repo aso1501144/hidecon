@@ -3,14 +3,13 @@
 #header {
 	position: relative;
 	margin: 0 auto;
-	background: url(../img/org.jpg);
-	background-color: black;
-	width: 962px;
+	background-color: rgb(255,192,203);
+	width: 1200px;
 	/* width:200%; */
 	height: 87px;
 	padding: auto;
-
 }
+
 #header h1 {
 	position: absolute;
 	/*	left: 1px;
@@ -43,16 +42,16 @@
 	background: url(../images/top/bg_wrapper.gif) repeat-y;
 }
 
-
 /* メインカラム
 ------------------------------------------------------*/
 #mainCol {
 	float: none;
-	 margin: 0 auto;
+	margin: 0 auto;
 	padding: 0 0 30px 0;
 	width: 1025px;
 	min-height: 400px;
-	background-color: #ffc0cb;
+	background-color: rgba(255,192,203,0.6);
+	border-radius: 8px;
 }
 
 #mainCol a:link {
@@ -95,11 +94,10 @@
 #gnavi li a {
 	display: block;
 	/* background: url(../img/hidechannel.png) no-repeat; */
-	background-color:#ffc0cb;
+	background-color: #ffc0cb;
 	/* width: 112px; */
 	width: 197px;
 	height: 32px;
-
 	/* text-indent: -9999px; */
 }
 /* ホーム */
@@ -197,7 +195,7 @@ a#home:hover {
 	cursor: text;
 }
 
- body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form,
 	fieldset, input, textarea, p, blockquote, th, td {
 	margin: 0;
 	padding: 0;
@@ -234,6 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
 
+
 h1 {
 	text-align: center;
 	background-color: #ffc0cb;
@@ -242,12 +241,16 @@ h1 {
 	height: 100%;
 }
 
+#kuri{
+	width: 300px;
+	margin: auto;
+}
+
 table#login {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0px;
 }
-
 
 table.table-design {
 	background-color: rgba(255, 255, 255, 0.7);
