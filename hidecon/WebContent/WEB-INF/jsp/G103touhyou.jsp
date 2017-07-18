@@ -28,9 +28,7 @@
 						</div>
 					</div>
 				</div>
-
-
-				いいのか？
+				いいのか？本当にいいのか？
 				<form action="Vote" method="post">
 				<input type="hidden" value="<c:out value="${requestScope.id}"/>" name="works_id">
 					<input type="submit" name="submit" value="投票する">
