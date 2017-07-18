@@ -32,7 +32,7 @@
 
 				いいのか？
 				<form action="Vote" method="post">
-				<input type="hidden" value="<c:out value="${requestScope.work.id}"/>" name="works_id">
+				<input type="hidden" value="<c:out value="${requestScope.id}"/>" name="works_id">
 					<input type="submit" name="submit" value="投票する">
 					<input type="button" onClick='history.back();' value="戻る">
 				</form>
