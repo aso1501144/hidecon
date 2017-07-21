@@ -21,7 +21,7 @@
 				<div class="parent">
 					<div class="inner">
 						ありがとなす
-						<a href="">ランキングなす</a>
+						<a href="Rank">ランキングなす</a>
 					</div>
 				</div>
 				<form name="form1" action="Vote" method="get">
