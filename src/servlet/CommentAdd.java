@@ -31,14 +31,16 @@ public class CommentAdd extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		String user_id = request.getParameter("user_id");
 		String works_id = request.getParameter("works_id");
-		String comment = request.getParameter("comment");
+		String user_id = request.getParameter("user_id");
+
+		request.setAttribute("works_id", works_id);
+		request.setAttribute("user_id", user_id);
 
 		CommentDAO commentDAO = new CommentDAO();
-		commentDAO.insertcomment(user_id, works_id, comment);
+		request.setAttribute("comment", commentDAO.getcomments(works_id));
 
-		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103tohyou.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G105comment.jsp");
 		rd.forward(request, response);
 	}
 
@@ -47,7 +49,16 @@ public class CommentAdd extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		//doGet(request, response);
+		String user_id = request.getParameter("user_id");
+		String works_id = request.getParameter("works_id");
+		String comment = request.getParameter("comment");
+
+		CommentDAO commentDAO = new CommentDAO();
+		commentDAO.insertcomment(user_id, works_id, comment);
+
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103touhyou.jsp");
+		rd.forward(request, response);
 	}
 
 }
