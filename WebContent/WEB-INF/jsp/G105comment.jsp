@@ -21,13 +21,11 @@
 						<div class="tablecell">
 							<div style="text-align: center;">
 								<p>
-									<c:forEach var="comment" items="${requestScope.comment}"
-										varStatus="st">
+									<c:forEach var="comment" items="${requestScope.comment}">
 										<c:out value="${comment.user_id}" />
 										<c:out value="${comment.comment}" />
 									</c:forEach>
 								</p>
-
 							</div>
 						</div>
 					</div>

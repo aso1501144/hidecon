@@ -91,7 +91,7 @@ public class CommentDAO {
 					connection();
 					// INSERT文の設定・実行
 					// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
-					String sql = "SELECT * FROM works WHERE works_id = ?;";
+					String sql = "SELECT * FROM comment WHERE works_id = ?;";
 					stmt = con.prepareStatement(sql);
 					stmt.setString(1, "works_id");
 					ResultSet rs = stmt.executeQuery();

@@ -36,8 +36,8 @@
 				</form>
 
 				<form action="CommentAdd" method="get">
-				<input type="hidden" value="<c:out value="${requestScope.works_id}"/>" name="works_id">
-				<input type="hidden" value="<c:out value="${requestScope.user_id}"/>" name="user_id">
+				<input type="hidden" value="<c:out value="${requestScope.work.works_id}"/>" name="works_id">
+
 					<input type="submit" name="submit" value="コメントすりゅ">
 
 				</form>

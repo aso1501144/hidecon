@@ -32,10 +32,10 @@ public class CommentAdd extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		String works_id = request.getParameter("works_id");
-		String user_id = request.getParameter("user_id");
+		//String user_id = request.getParameter("user_id");
 
 		request.setAttribute("works_id", works_id);
-		request.setAttribute("user_id", user_id);
+		//request.setAttribute("user_id", user_id);
 
 		CommentDAO commentDAO = new CommentDAO();
 		request.setAttribute("comment", commentDAO.getcomments(works_id));
