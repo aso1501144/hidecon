@@ -93,7 +93,7 @@ public class CommentDAO {
 					// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
 					String sql = "SELECT * FROM comment WHERE works_id = ?;";
 					stmt = con.prepareStatement(sql);
-					stmt.setString(1, "works_id");
+					stmt.setString(1, works_id);
 					ResultSet rs = stmt.executeQuery();
 
 					while (rs.next()) {

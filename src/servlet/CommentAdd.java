@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dao.CommentDAO;
+import model.Comment;
 
 /**
  * Servlet implementation class CommentAdd
@@ -37,8 +39,11 @@ public class CommentAdd extends HttpServlet {
 		request.setAttribute("works_id", works_id);
 		//request.setAttribute("user_id", user_id);
 
+		ArrayList<Comment> comment = new ArrayList<Comment>();
 		CommentDAO commentDAO = new CommentDAO();
-		request.setAttribute("comment", commentDAO.getcomments(works_id));
+
+		comment = commentDAO.getcomments(works_id);
+		request.setAttribute("comment",comment);
 
 		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G105comment.jsp");
 		rd.forward(request, response);
