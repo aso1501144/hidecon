@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import dao.CommentDAO;
 import model.Comment;
@@ -33,10 +34,12 @@ public class CommentAdd extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+
+		HttpSession session = request.getSession(true);
 		String works_id = request.getParameter("works_id");
 		//String user_id = request.getParameter("user_id");
 
-		request.setAttribute("works_id", works_id);
+		session.setAttribute("works_id", works_id);
 		//request.setAttribute("user_id", user_id);
 
 		ArrayList<Comment> comment = new ArrayList<Comment>();
@@ -62,7 +65,19 @@ public class CommentAdd extends HttpServlet {
 		CommentDAO commentDAO = new CommentDAO();
 		commentDAO.insertcomment(user_id, works_id, comment);
 
-		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G103touhyou.jsp");
+		//WorksDAO worksDAO = new WorksDAO();
+
+		//request.setAttribute("work",worksDAO.getWork(works_id));
+
+		ArrayList<Comment> comment2 = new ArrayList<Comment>();
+		//CommentDAO commentDAO = new CommentDAO();
+
+		comment2 = commentDAO.getcomments(works_id);
+		request.setAttribute("comment",comment2);
+		request.setAttribute("works_id", works_id);
+
+
+		RequestDispatcher rd = request.getRequestDispatcher("WEB-INF/jsp/G105comment.jsp");
 		rd.forward(request, response);
 	}
 

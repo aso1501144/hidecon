@@ -20,10 +20,12 @@
 					<div class="inner">
 						<div class="tablecell">
 							<div style="text-align: center;">
-								<p>
+								<p style="background-color: white;">
 									<c:forEach var="comment" items="${requestScope.comment}">
-										<c:out value="${comment.user_id}" />
+										ユーザー名：<c:out value="${comment.user_name}" />さん
+										<br>
 										<c:out value="${comment.comment}" />
+										<br>
 									</c:forEach>
 								</p>
 							</div>
@@ -31,11 +33,12 @@
 					</div>
 					<form action="CommentAdd" method="post">
 						<input type="text" name="comment"> <input type="hidden"
-							value="<c:out value="${requestScope.works_id}"/>" name="works_id">
+							value="<c:out value="${sessionScope.works_id}"/>" name="works_id">
 						<input type="hidden"
 							value="<c:out value="${sessionScope.user.user_id}"/>"
 							name="user_id"> <input type="submit" value="コメントする">
 					</form>
+					<a href="Return"><font style="color: white;">戻る</font></a>
 				</div>
 			</div>
 		</div>

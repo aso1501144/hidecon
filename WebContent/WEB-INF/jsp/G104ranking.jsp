@@ -14,7 +14,6 @@
 <body>
 <div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
-kosin();
 	<c:forEach var="works" items="${requestScope.rank}" varStatus="st">
 		<c:if test="${status.first}">
 			<tr>

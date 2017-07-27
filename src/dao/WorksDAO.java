@@ -125,7 +125,7 @@ public class WorksDAO {
 			connection();
 			// INSERT文の設定・実行
 			// INパラメータ(プレースホルダー)の使用例。サニタイジングのために使おう！
-			String sql = "SELECT * FROM works order by works_count desc;";
+			String sql = "SELECT * FROM works order by works_count desc LIMIT 5;";
 			stmt = con.prepareStatement(sql);
 			ResultSet rs = stmt.executeQuery();
 
