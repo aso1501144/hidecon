@@ -64,6 +64,16 @@
 	border-radius: 8px;
 }
 
+#mainCol3 {
+	float: none;
+	margin: 0 auto;
+	padding: 0 0 30px 0;
+	width: 630px;
+	min-height: 400px;
+	background-color: rgba(255,192,203,0.6);
+	border-radius: 8px;
+}
+
 #mainCol a:link {
 	color: #F00;
 }

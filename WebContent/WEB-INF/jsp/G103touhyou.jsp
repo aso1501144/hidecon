@@ -16,7 +16,7 @@
 		<h1 style="height: 200%">投票してクリー</h1>
 		<div id="wrapper" class="clearfix">
 
-			<div id="mainCol">
+			<div id="mainCol3">
 				<div class="parent">
 					<div class="inner">
 						<div class="tablecell">

@@ -33,6 +33,8 @@ kosin();
 				</p>
 				<p>
 					<c:out value="${works.works_name}" />
+					&nbsp;
+					&nbsp;
 					<c:out value="${works.works_count}" />票
 				</p>
 
