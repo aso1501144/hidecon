@@ -14,13 +14,13 @@
 <body>
 <div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
-kosin();
 
 <div id="wrapper" class="clearfix">
 			<div id="mainCol2">
 				<div class="parent">
 					<div class="inner">
 						<div class="tablecell">
+
 	<c:forEach var="works" items="${requestScope.rank}" varStatus="st">
 		<c:if test="${status.first}">
 			<tr>
