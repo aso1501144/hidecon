@@ -31,14 +31,17 @@
 				いいのか？本当にいいのか？
 				<form action="Vote" method="post">
 				<input type="hidden" value="<c:out value="${requestScope.id}"/>" name="works_id">
-					<input type="submit" name="submit" value="投票する">
-					<input type="button" onClick='history.back();' value="戻る">
+					<input id="touhyou" type="submit" name="submit" value="投票する">
+					<input id="back" type="button" onClick='history.back();' value="戻る">
 				</form>
-
+				
+				<br>
+				<br>
+				
 				<form action="CommentAdd" method="get">
 				<input type="hidden" value="<c:out value="${requestScope.work.works_id}"/>" name="works_id">
 
-					<input type="submit" name="submit" value="コメントすりゅ">
+					<input id="comm" type="submit" name="submit" value="コメントすりゅ">
 
 				</form>
 			</div>
