@@ -14,8 +14,8 @@ comm: ヘッダー：ASOショップ　-->
 
 			<ul id="gnavi" style="margin-left: 200px">
 				<li class="gn-news"><a href="Login">ログインする</a></li>
-				<!-- <li class="gn-game"><a href="Works">投票はこちら</a></li> -->
 				<li class="gn-goods"><a href="Rank">ランキング</a></li>
+				<li class="gn-game"><a href="Works">ひでの一覧はこちら</a></li>
 				<!-- /#gnavi -->
 			</ul>
 

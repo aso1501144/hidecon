@@ -8,20 +8,20 @@
 <!-- <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css" />
 <link href="css/tekkadan.css" rel="stylesheet" media="all"> -->
 <link href="css/mm.css" rel="stylesheet" media="all">
-<title>投票ページ</title>
+<title>投票完了</title>
 </head>
 <body>
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-		<h1 style="height: 200%">ありがとナスー</h1>
+		<h1 style="height: 200%">投票ありがとうございます。</h1>
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
 				<div class="parent">
 					<div class="inner">
-						ありがとなす
-						<a href="Rank">ランキングなす</a>
+						投票ありがとうございます。
+						<a href="Rank">ランキングを表示します。</a>
 					</div>
 				</div>
 				<form name="form1" action="Vote" method="get">

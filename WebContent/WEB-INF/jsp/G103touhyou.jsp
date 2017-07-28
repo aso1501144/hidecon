@@ -7,13 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/mm.css" rel="stylesheet" media="all">
 <script type="text/javascript" src="/hidecon/js/javascript.js"></script>
-<title>投票確認</title>
+<title>投票の確認</title>
 </head>
 <body>
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-		<h1 style="height: 200%">投票画面</h1>
+		<h1 style="height: 200%">投票の確認をしてください</h1>
 		<div id="wrapper" class="clearfix">
 
 			<div id="mainCol">
@@ -31,14 +31,17 @@
 				投票しますか？
 				<form action="Vote" method="post">
 
-				<input type="hidden" value="<c:out value="${requestScope.id}"/>" name="works_id">
-					<input id="touhyou" type="submit" name="submit" value="投票する">
-					<input id="back" type="button" onClick='history.back();' value="戻る">
-</form>
+					<input type="hidden" value="<c:out value="${requestScope.id}"/>"
+						name="works_id"> <input id="touhyou" type="submit"
+						name="submit" value="投票する"> <input id="back" type="button"
+						onClick='history.back();' value="戻る">
+				</form>
+				<form action="CommentAdd" method="get">
+					<input type="submit" name="submit" value="コメントする">
+				</form>
 
 
-				<br>
-				<br>
+				<br> <br>
 
 			</div>
 		</div>

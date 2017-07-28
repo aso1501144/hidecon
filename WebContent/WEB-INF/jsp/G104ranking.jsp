@@ -9,42 +9,45 @@
 <script type="text/javascript" src="../js.js"></script>
 <link href="css/mm.css" rel="stylesheet" media="all">
 <script type="text/javascript" src="/hidecon/js/javascript.js"></script>
-<title>投票結果画面</title>
+<title>投票結果</title>
 </head>
 <body>
-<div id="container">
+	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-<div id="wrapper" class="clearfix">
+		<div id="wrapper" class="clearfix">
 			<div id="mainCol2">
 				<div class="parent">
 					<div class="inner">
 						<div class="tablecell">
+							５位までのランキングです
+							<c:forEach var="works" items="${requestScope.rank}"
+								varStatus="st">
+								<c:if test="${status.first}">
+									<tr>
+								</c:if>
 
-	<c:forEach var="works" items="${requestScope.rank}" varStatus="st">
-		<c:if test="${status.first}">
-			<tr>
-		</c:if>
+								<div style="text-align: center;">
+									<p>
+										<img border="0" width="300" height="300"
+											src="./img/<c:out value="${works.path}"/>"
+											style="padding: 15px">
+									</p>
+									<p>
+										<c:out value="${works.works_name}" />
+										<c:out value="${works.works_count}" />
+										票
+									</p>
 
-			<div style="text-align: center;">
-				<p>
-					<img border="0" width="300" height="300"
-						src="./img/<c:out value="${works.path}"/>" style="padding: 15px">
-				</p>
-				<p>
-					<c:out value="${works.works_name}" />
-					<c:out value="${works.works_count}" />票
-				</p>
+								</div>
 
+							</c:forEach>
+						</div>
+					</div>
+				</div>
 			</div>
-
-	</c:forEach>
+		</div>
 	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-</div>
 
 
 

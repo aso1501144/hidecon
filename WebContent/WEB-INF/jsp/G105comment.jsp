@@ -7,13 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/mm.css" rel="stylesheet" media="all">
 <script type="text/javascript" src="/hidecon/js/javascript.js"></script>
-<title>確認</title>
+<title>コメント</title>
 </head>
 <body>
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
 
-		<h1 style="height: 200%">コメントナス</h1>
+		<h1 style="height: 200%">コメントの一覧です</h1>
 		<div id="wrapper" class="clearfix">
 			<div id="mainCol">
 				<div class="parent">
@@ -36,7 +36,8 @@
 							value="<c:out value="${sessionScope.works_id}"/>" name="works_id">
 						<input type="hidden"
 							value="<c:out value="${sessionScope.user.user_id}"/>"
-							name="user_id"> <input type="submit" value="コメントする">
+							name="user_id">
+						 <input type="submit" value="コメントする">
 					</form>
 					<a href="Return"><font style="color: white;">戻る</font></a>
 				</div>

@@ -11,7 +11,7 @@
 <body>
 	<div id="container">
 		<jsp:include page="/WEB-INF/jsp/header.jsp"></jsp:include>
-		<h1 id="kuri">ログインしてクリー</h1>
+		<h1 id="kuri">ログインしてください</h1>
 
 		<div id="wrapper" class="clearfix">
 
