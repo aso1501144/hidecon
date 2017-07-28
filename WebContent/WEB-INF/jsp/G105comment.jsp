@@ -38,8 +38,12 @@
 							value="<c:out value="${sessionScope.user.user_id}"/>"
 							name="user_id">
 						 <input type="submit" value="コメントする">
+						 <br>
+						 <br>
+						 <input id="back" type="button"
+						onClick='history.back();' value="戻る">
 					</form>
-					<a href="Return"><font style="color: white;">戻る</font></a>
+					<!-- <a href="Return"><font style="color: white;">戻る</font></a> -->
 				</div>
 			</div>
 		</div>

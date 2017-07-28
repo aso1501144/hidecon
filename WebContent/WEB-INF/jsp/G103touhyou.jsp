@@ -36,8 +36,11 @@
 						name="submit" value="投票する"> <input id="back" type="button"
 						onClick='history.back();' value="戻る">
 				</form>
+				
+				<br>
+				
 				<form action="CommentAdd" method="get">
-					<input type="submit" name="submit" value="コメントする">
+					<input id="comm" type="submit" name="submit" value="コメントする">
 				</form>
 
 
