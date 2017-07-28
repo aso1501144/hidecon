@@ -35,9 +35,9 @@
 									</p>
 									<p>
 										<c:out value="${works.works_name}" />
+										&nbsp;
+										&nbsp;
 										<c:out value="${works.works_count}" />
-										&nbsp;
-										&nbsp;
 										票
 									</p>
 								</div>
