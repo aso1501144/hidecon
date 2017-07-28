@@ -38,8 +38,8 @@
 										<c:out value="${works.works_count}" />
 										票
 									</p>
-
 								</div>
+
 
 							</c:forEach>
 						</div>
