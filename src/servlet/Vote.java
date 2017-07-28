@@ -37,6 +37,7 @@ public class Vote extends HttpServlet {
 		session.setAttribute("path",request.getParameter("path"));
 		String id = request.getParameter("id");
 		session.setAttribute("works_id",id);
+		request.setAttribute("id",id);
 
 
 		WorksDAO worksDAO = new WorksDAO();

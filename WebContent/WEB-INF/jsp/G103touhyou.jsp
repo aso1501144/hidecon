@@ -31,15 +31,17 @@
 				投票しますか？
 				<form action="Vote" method="post">
 
-					<input type="hidden" value="<c:out value="${requestScope.id}"/>"
+					<input type="hidden" value="<c:out value="${requestScope.work.works_id}"/>"
 						name="works_id"> <input id="touhyou" type="submit"
 						name="submit" value="投票する"> <input id="back" type="button"
 						onClick='history.back();' value="戻る">
 				</form>
-				
+
 				<br>
-				
+
 				<form action="CommentAdd" method="get">
+				<input type="hidden" value="<c:out value="${requestScope.work.works_id}"/>"
+						name="works_id">
 					<input id="comm" type="submit" name="submit" value="コメントする">
 				</form>
 
